@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    overflow: hidden;
+}
+
+/* Screens */
+.screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.show {
+    display: flex;
+}
+
+/* Countdown */
+#timer {
+    font-size: 5rem;
+    margin-top: 20px;
+    color: white;
+    animation: pulse 1s infinite;
+}
+
+/* Birthday screen */
+#birthday {
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    color: white;
+}
+
+.balloons {
+    font-size: 3rem;
+    animation: float 2s infinite alternate;
+}
+
+.cake {
+    font-size: 5rem;
+    margin: 20px 0;
+}
+
+/* Message */
+#message {
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    color: white;
+}
+
+#message p {
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.signature {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Animations */
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.2); }
+}
+
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-20px); }
+}
